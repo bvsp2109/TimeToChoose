@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'myapp/base/institutebase.html' %}
+{% load static %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>upload next batches details</title>
+        <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+    </head>
+    <body>
+
+
+    <form method="post" align="center" style="margin-top: 8%">
+        {% csrf_token %}
+        <div class="col-md-4" style="text-align: center;margin-left: 15%">
+            <h3 style="color: #d43f3a; margin-top: 7%"><u>Update Profile</u></h3>
+            <div method="post" class="form-group col-md-6 mb-0"
+                 style="background: #c0a16b;width: 650px;margin-left: -2%">
+                <div class="col-md-12">
+                    <h2>{{ user.username }}</h2>
+                    <div class="col-md-12">
+                        <h2>{{ user.first_name }}</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <h2>{{ user.email }}</h2>
+                    </div>
+                    <div class="col-md-8" style="margin-left: 15%">
+                        <h2>{{ user.profile.Mobile }}</h2>
+                </div>
+                    <div class="col-md-8" style="margin-left: 15%">
+                        <h2>{{ user.profile.Address }}</h2>
+                </div>
+
+                    {{ Course.Institute_Name }}
+                <br><br><br>
+                <div style="margin-left: -1% ;margin-top: 25%">
+                </div>
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
+</body>
+</html>

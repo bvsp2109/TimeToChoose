@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'myapp/base/frontbase.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>upload next batches details</title>
+    <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+</head>
+<body>
+<form method="post" style="margin-top: 40px;margin-bottom: 3px;">
+    {% csrf_token %}
+    <div class="form-group col-md-4 mb-0" style="margin-left: 500px;margin-right: 300px">
+        {{ form.Name|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-4 mb-0" style="margin-left: 500px">
+        {{ form.Mobile|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-4 mb-0" style="margin-left: 500px">
+        {{ form.Email|as_crispy_field }}<br>
+    </div>
+
+    <div class="form-group col-md-4 mb-0" style="margin-left: 500px">
+        {{ form.Address|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-4 mb-0" style="margin-left: 500px">
+        {{ form.Website|as_crispy_field }}
+    </div>
+
+    <input type="submit" name="Submit" class="btn btn-success" style="width: 100px;margin-top: 375px; margin-left: -570px">
+    <
+</form>
+{% endblock %}
+</body>
+</html>

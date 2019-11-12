@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" href="{% static 'images/BigClasses-Logo.png' %}" sizes="16x16" type="image/png">
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/BigClasses-Logo.png' %}" sizes="16x16" type="image/png">
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap Dropdown Hover CSS -->
+
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap Dropdown Hover CSS -->
+
+</head>
+<body>
+<!-- header content start -->
+<!-- navbar content start -->
+<div class="header my-banner">
+    <nav class="navbar navbar-default " style="width: 100%;height: 55px">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'images/BigClasses-Logo.png' %}" alt="BIG CLASSES_LOGO" title="BIG CLASSES"
+                         class="big-classes-logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href='/welcome/'>HOME </a></li>
+                    <li><a href="/intupload/">New Demo</a></li>
+                    <li><a href="/demostudentsdata/">Students Data</a></li>
+                    <li><a href="/instituteprofile/">Profile</a></li>
+                    <li style="color: #c0a16b;margin-top: 2.6%">WELCOME: <b style="color: #c9e2b3">{{ user.first_name|upper }}</b></li>
+                    <li><a href="/accounts/logout/">Logout</a></li>
+                </ul>
+            </div><!-- /.container -->
+        </div>
+        {% block content %}
+
+        {% endblock %}
+    </nav>
+</div>
+</body>
+</html>

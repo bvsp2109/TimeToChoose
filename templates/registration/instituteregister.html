@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'myapp/base/frontbase.html' %}
+{% load static %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>upload next batches details</title>
+        <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+    </head>
+    <body>
+
+
+    <form method="post" align="center" style="margin-top: 8%">
+        {% csrf_token %}
+        <div class="col-md-4" style="text-align: center;margin-left: 15%">
+            <h3 style="color: #d43f3a; margin-top: 7%"><u>REGISTER FOR FREE DEMO</u></h3>
+            <div method="post" class="form-group col-md-6 mb-0"
+                 style="background: #c0a16b;width: 650px;margin-left: -2%">
+
+                <div class="col-md-12">
+                    {{ form.first_name|as_crispy_field }}
+                </div>
+                <div class="col-md-6">
+                    {{ form.email|as_crispy_field }}
+                </div>
+                <div class="col-md-6">
+                    {{ form.username|as_crispy_field }}
+                </div>
+                <div class="col-md-6">
+                    {{ form.password1|as_crispy_field }}
+                </div>
+                <div class="col-md-6">
+                    {{ form.password2|as_crispy_field }}
+                </div>
+                <br><br><br>
+                <div style="margin-left: -1% ;margin-top: 45%">
+                <input type="submit" value="Register" class="btn btn-success"
+                       style="height: 40px;width: 20%;text-align: center;"> or
+                <a href="/accounts/login" type="button" class="btn btn-success"
+                   style="width: 10%;height: 40px">Login</a>
+                    </div>
+    </form>
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Institute registration</title>
+    <link rel="icon" href="{% static 'images/BigClasses-Logo.png' %}" sizes="16x16" type="image/png">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="row form-section" id="register">
+        <div class="container">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="
+    background: gray;margin-top: 05px;
+    padding: 30px;">
+
+                <h3>REGISTER FOR INSTITUTE</h3>
+                <hr style="width:100px;  color:#ddd;">
+                <br>
+                <form method="post" align="center">{% csrf_token %}
+                    <input type="email" name="email" placeholder="Email Id"><br>
+                    <input type="text" name="username" placeholder="Username"><br>
+                    <input type="password" name="password1" placeholder="Password"><br>
+                    <input type="password" name="password2" placeholder="confirm Password"><br>
+                    <br>
+                    <input type="submit" name="Register" class="btn btn-success "/>
+                    <a href="/accounts/login" type="button" class="btn btn-success">Login</a>
+                </form>
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+</body>
+</html>

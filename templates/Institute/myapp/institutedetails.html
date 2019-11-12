@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'myapp/base/studentbase.html' %}
+{% load static %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New Batches.</title>
+        <link href="{% static 'css/class.css' %}" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body style="text-align: center">
+    <h1>Welcome To Online Python Training</h1><br>
+    <form>{% csrf_token %}
+    <table align="center">
+        <tr>
+            <th><h4>Institute Name</h4></th>
+            <th><h4>Institute Email </h4></th>
+            <th><h4> Institute Mobile</h4></th>
+            <th><h4> Institute Address</h4></th>
+            <th><h4> Institute Website</h4></th>
+
+        </tr>
+        {% for course in InstituteDetails %}
+        <tr>
+            <a href="{{ course.get_absolute_url }}"></a>
+            <td>{{ course.Name }}</td>
+            <td>{{ course.Email }}</td>
+            <td>{{ course.Mobile }}</td>
+            <td>{{ course.Address }}</td>
+            <td>{{ course.Website }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </form>
+{% endblock %}
+</body>
+</html>

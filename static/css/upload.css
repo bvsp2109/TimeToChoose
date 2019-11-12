@@ -1,0 +1,12 @@
+body{
+    background-color: lightsteelblue;
+}
+.form-control{
+    text-align: center;
+}
+textarea.form-control{
+    height: 10%
+}
+.form-group {
+    margin-bottom: 5px;
+}

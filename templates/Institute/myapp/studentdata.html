@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'myapp/base/institutebase.html' %}
+{% load static %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New Batches.</title>
+        <link href="{% static 'css/class.css' %}" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body style="text-align: center">
+    <h1>Students Data For Demo Register </h1><br>
+    <form>{% csrf_token %}
+    <table align="center">
+        <tr>
+            <th><h4>First Name</h4></th>
+            <th><h4>Last Name</h4></th>
+            <th><h4> Email</h4></th>
+            <th><h4> Mobile Number</h4></th>
+            <th><h4> Course Name</h4></th>
+            <th><h4> Current Location </h4></th>
+        </tr>
+        {% for course in CourseDetails %}
+        <tr>
+            <a href="{{ course.get_absolute_url }}"></a>
+            <td>{{ course.First_Name }}</td>
+            <td>{{ course.Last_Name }}</td>
+            <td>{{ course.Email }}</td>
+            <td>{{ course.Mobile_Number }}</td>
+            <td>{{ course.Course }}</td>
+            <td>{{ course.Location }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </form>
+{% endblock %}
+</body>
+</html>

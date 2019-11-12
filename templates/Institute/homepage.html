@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+{% extends 'myapp/base/institutebase.html' %}
+{% load static %}
+{% block content %}
+    {% load crispy_forms_tags %}
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+
+        <title>BIG CLASSES_Redesign by BILLU</title>
+        <link rel="icon" href="{% static 'images/BigClasses-Logo.png' %}" sizes="16x16" type="image/png">
+        <!-- Bootstrap -->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Bootstrap Dropdown Hover CSS -->
+
+
+    </head>
+    <body>
+    <!-- navbar content end -->
+    <div class="container">
+        <div class="col-md-8 col-sm-12 header-left">
+            <div class="heading">
+                <h1>python online reading</h1>
+                <hr style="width:300px; float:left; margin:10px 0 10px 0; text-align: center ">
+                <br><br>
+            </div>
+            <ul><h3>welcome{{ user }}</h3>
+                <li>Gain unbeatable knowledge in PYTHON like String Manipulations & Operators.</li>
+                <li>Race ahead in the recruitment race.</li>
+                <li>Take your career to whole new heights with PYTHON - the most in-demand skill today.</li>
+            </ul>
+
+            <div class="row">
+                <div class="offer-price">
+
+                    <div class="col-md-6 col-sm-6">
+                        <p>Learn anywhere in world</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 demo">
+                        {% if "/accounts/login/" %}
+                            <a href="/demoregister/"><p>Attend Free Demo</p></a>
+
+
+                        {% endif %}
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- header content start -->
+
+    <!-- upcoming demo  -->
+    <div class="row up-coming-info">
+        <div class="col-md-12 col-sm-12">
+            <div class="container">
+                <p style="text-align: center">Welcome to Python World &nbsp;
+
+            </div>
+            </p>
+
+        </div>
+    </div>
+    </div>
+    <!-- upcoming demo  -->
+
+    <!-- comparisons section -->
+    <div class="compare-section" id="compare">
+        <div class="row compare">
+            <div class="container">
+                <div class="col-md-6 col-sm-12 compare-left">
+                    <h3>Who Can Learn Python Online Course?</h3>
+                    <p>The Python training can be taken by any professionals looking forward to working as a Python
+                        Developer.
+                        The following professionals can be taken by the following:</p>
+
+
+                    <ul class="big-class-list">
+                        <li>Software Programmers / Developers.</li>
+                        <li>Data Scientists.</li>
+                        <li>Business Analysts.</li>
+                        <li>ETL Professionals.</li>
+                        <li>Business Intelligence Managers.</li>
+                        <li>Project Managers.</li>
+                    </ul>
+                    <h3>Prerequisites of the Course:</h3>
+                    <p>A person going for Python Online Training must have the basic knowledge of OOPS and basic
+                        programming
+                        knowledge</p>
+                </div>
+                <div class="col-md-6 col-sm-12 compare-right">
+
+                    <h3>Python Training Objectives</h3>
+                    <ul class="big-class-list">
+                        <li>Understand OOPS, Data Types, Looping Concept.</li>
+                        <li>Understand the in Libraries.</li>
+                        <li>Learn about Database Integration, Network Integration, and Python Web Framework Application.
+                        </li>
+                        <li>Implement MapReduce Concepts.</li>
+                        <li>Understand Machine Learning Algorithms.</li>
+                        <li>Learn File and Sequencing Operations.</li>
+                        <li>Write Pig UDF and Hive UDF.</li>
+                        <li>Learn PCA, RMSE, Log Loss, AUC, and Cross Validation.</li>
+                        <li>Master Data Analysis.</li>
+                        <li>Study Data Visualization.</li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4 get-in-touch ">
+                            <p>Get in Touch</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- comparisons section -->
+
+    <!-- about section -->
+
+    <div class="row about" id="about">
+        <div class="container">
+
+            <h2>ABOUT <span>PYTHON</span></h2>
+            <hr style="width:80px;  color:#ddd;">
+            <br><br>
+            <div class="col-md-6 about-left">
+
+                <iframe width="450" height="300" src="https://www.youtube.com/embed/D6esTdOLXh4" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <img src="{% static 'images/overview.png' %}" alt="about img " class="about-left-img">
+            </div>
+            <div class="col-md-6 about-right">
+                <p>Python is a robust, and a high-level programming language. It is built in dynamic semantics, data
+                    structures,
+                    and advanced typing. It is used in different fields such as web technologies, cloud computing, data
+                    mining, etc.
+                    You can apply this Python to any dynamic projects and write the program.
+                </p>
+
+                <p>The Python Online Training is growing extensively due to its increase in productivity.
+                    It supports the Object Oriented Programming to develop advanced applications and provides high-level
+                    of
+                    data structures.
+                    It is easy to learn and very powerful scripting language and due to this, it develops strong
+                    applications.</p>
+                <br>
+
+                <h3>Job Trends</h3>
+
+                <ul>
+                    <li class="jobtrend">The salary for the candidate with python skilled could be up to 30% higher than
+                        for
+                        those with skills in traditional languages.
+                    </li>
+                    <li class="jobtrend">Python has been embraced by top technology companies such as Google, Dropbox,
+                        Mozilla, Quora, Intel, Cisco, Hewlett-Packard, Seagate, Qualcomm and IBM.
+                    </li>
+                    <li class="jobtrend">According to hiring agencies, Python is a hot skill taking attention from
+                        traditional languages.
+                    </li>
+                    <li class="jobtrend">After successful completion of it, you can work in varied fields such as Web
+                        Applications, Selenium Testing, Big Data Development and Analyst, Web Services, Networking.
+                    </li>
+                </ul>
+
+                <img src="{% static 'images/python-trends.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- about section -->
+
+    <!-- enhance your skills -->
+    <div class="row enhance">
+        <div class="container">
+            <div class="col-md-12">
+                <h3>Enhance your skills</h3>
+                <br>
+                <p>Know More</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- enhance your skills -->
+
+    <!-- faq section  -->
+
+    <div class="row faq" id="faq">
+        <div class="container">
+            <div class="col-md-12">
+                <h3>FAQS</h3>
+                <hr style="width:80px;  color:#ddd;">
+                <br><br>
+
+                <button data-toggle="collapse" data-target="#demo"> 1. Why Should Learn Python from BigClasses?</button>
+
+                <div id="demo" class="collapse">
+
+                    <p>
+                        <br>BigClasses is Offering 365 Days access to videos, updated course materials with 24/7
+                        Support.
+                        We provide real-time projects and assignments. The training will help you clear the Python
+                        Certification exam. The Python tutorial videos are well designed to give detailed information
+                        about
+                        a course, and all its subjects.
+                        They are updated and revised constantly with current marketing trends.</p>
+                    <br>
+                </div>
+                <br>
+                <button data-toggle="collapse" data-target="#demo-2">2. What are the Various Methods of Training that
+                    BigClasses Offers?
+                </button>
+
+                <div id="demo-2" class="collapse">
+
+                    <p class="faq-content">
+                        <br>
+                        We are providing 4 types of Methods of Training: <br>
+                    <ul>
+                        <li>Instructor-led Online Training</li>
+                        <li>Recorded Video Training</li>
+                        <li>Corporate Training</li>
+                        <li>Project Support</li>
+                    </ul>
+                    </p>
+                </div>
+                <br>
+
+                <button data-toggle="collapse" data-target="#demo-3">3. Do You Provide Assistance?</button>
+
+                <div id="demo-3" class="collapse">
+
+                    <p>
+                        <br>
+                        Apart from technical training and hands-on projects, BigClasses will guide the students to get
+                        placed in their dream roles.
+                        We will be happy to assist students with preparation for the interview.
+                        <br>
+                    </p>
+                </div>
+                <br>
+
+                <button data-toggle="collapse" data-target="#demo-4">4. Can I Request a Support Session if I Find
+                    Difficulty
+                    in Grasping Topics?
+                </button>
+
+                <div id="demo-4" class="collapse">
+
+                    <p>
+                        <br>
+                        We will provide you with email support for your queries. If the query is not resolved by email,
+                        we can arrange for a one-on-one session with the concerned trainer.
+                        You can even get support even after completing the training.
+                        <br>
+                    </p>
+                </div>
+                <br>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- faq section  -->
+
+    <!-- slider section -->
+    <div class="row slider">
+        <div class="video_overlay">
+            <h1>Reviews</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+
+                            <!-- Bottom Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#quote-carousel" data-slide-to="1" class=""></li>
+                            </ol>
+
+                            <!-- Carousel Slides / Quotes -->
+                            <div class="carousel-inner">
+
+                                <!-- Quote 1 -->
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>“Python Training from BigClasses has taught me quite an important coding
+                                                and
+                                                has helped me get a perfect job at a perfect company. I am thankful to
+                                                the
+                                                Python Trainer who has taught the course excellently”</p>
+                                            <small><strong>Venkat M., Trainee</strong></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Quote 2 -->
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>“I was a front-end developer for a few years. I learned Python from
+                                                BigClasses. I applied for self-paced learning. I was working as a
+                                                front-end
+                                                developer in the morning, and I learned Python in the evening. I have
+                                                successfully transformed my career and I am getting highly paid.”</p>
+                                            <small><strong>Raghu k., Employee</strong></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider section -->
+    <!-- form section -->
+    <!-- form section -->
+    <!-- footer section -->
+    <div class="row footer-section">
+        <div class="container">
+            <div class="col-md-4">
+                <h3>About Bigclasses</h3>
+                <br>
+                <p>Born at the dawn of the 21st century, Big Classes has been constantly pioneering and evolving in the
+                    Online
+                    Training Industry. With an experience of over a decade and half in the training industry,
+                    Big Classes is today a name to be reckoned with for any kind of IT trainings in online model.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Python</a></li>
+                    <li><a href="#">Who Should Learn?</a></li>
+                    <li><a href="#">Objectives</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Register Now</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Location</h5>
+                <p>#302 & 303, Tulip Chambers, Above Reliance fresh store
+                    Ameerpet, Near Satyam theatre, Hyderabad
+                    Telangana, India - 500016.</p>
+
+                <br><br>
+                <p>Phone: +(91) 800-811-4040</p>
+                <p>Email:
+                    <a href="mailto:info@bigclasses.com" target="_top">info@bigclasses.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <!-- bottom footer -->
+    <div class="row botttom-footer">
+
+    </div>
+
+    <!-- bottom footer -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+    <script>
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function (event) {
+            // Avoid following the href location when clicking
+            event.preventDefault();
+            // Avoid having the menu to close when clicking
+            event.stopPropagation();
+            // Re-add .open to parent sub-menu item
+            $(this).parent().addClass('open');
+            $(this).parent().find("ul").parent().find("li.dropdown").addClass('open');
+        });
+    </script>
+
+{% endblock %}
+</body>
+</html>
+
